@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Token Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Check a token before you buy it</h1>
+    <p class="intro">Paste a token contract address to see warning signs of a rug pull.</p>
+
+    <div class="checker">
+      <label for="address">Token contract address</label>
+      <input id="address" type="text" placeholder="0x..." autocomplete="off" spellcheck="false">
+      <button id="check-btn">Check token</button>
+    </div>
+
+    <div id="result" class="result" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
